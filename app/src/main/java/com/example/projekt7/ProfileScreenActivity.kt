@@ -45,7 +45,7 @@ class ProfileScreenActivity : AppCompatActivity() {
 
         mapsList = arrayListOf()
 
-        profileAdapter = ProfileAdapter(mapsList, object : ProfileAdapter.OnClickListener {
+        profileAdapter = ProfileAdapter(mapsList,this, object : ProfileAdapter.OnClickListener {
             override fun onItemClick(position: Int) {
                 val intent = Intent(this@ProfileScreenActivity, DisplayMapsActivity::class.java)
                 intent.putExtra(EXTRA_USER_MAP, mapsList[position])
@@ -88,7 +88,7 @@ class ProfileScreenActivity : AppCompatActivity() {
             .addSnapshotListener(object : EventListener<QuerySnapshot> {
                 override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
                     if (error != null) {
-                        Log.e("Firestore Error", error.message.toString())
+                        Log.e("Firebase", error.message.toString())
                         return
                     }
                     for (dc: DocumentChange in value?.documentChanges!!) {

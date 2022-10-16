@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.projekt7.DataManager.db
 import com.example.projekt7.Model.Place
 
-data class ProfileAdapter(var spotMaps: ArrayList<Place>, val onClickListener: OnClickListener) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
+data class ProfileAdapter(var spotMaps: ArrayList<Place>,val c: Context, val onClickListener: OnClickListener) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
 
     interface OnClickListener {
         fun onItemClick(position: Int)
@@ -48,7 +48,7 @@ data class ProfileAdapter(var spotMaps: ArrayList<Place>, val onClickListener: O
         init {
             titles = itemView.findViewById(R.id.umTitleLocation)
             descriptions = itemView.findViewById(R.id.umDescription)
-           // mMenus = itemView.findViewById(R.id.mMenus)
+           //mMenus = itemView.findViewById(R.id.mMenus)
            // mMenus.setOnClickListener { popupMenus(it) }
         }
     }
@@ -99,12 +99,12 @@ data class ProfileAdapter(var spotMaps: ArrayList<Place>, val onClickListener: O
 
  */
 
-  /* private fun deletePlace() {
+   private fun deletePlace() {
         db.collection("places").document("Spot1")
             .delete()
             .addOnSuccessListener { Log.d(TAG, "PLace successfully deleted!") }
             .addOnFailureListener { e -> Log.w(TAG, "Error deleting place", e) }
     }
-*/
+
 
 }
