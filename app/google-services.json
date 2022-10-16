@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003728329511",
+    "project_id": "spoton-8bebd",
+    "storage_bucket": "spoton-8bebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003728329511:android:6c52474346819f609ee702",
+        "android_client_info": {
+          "package_name": "com.example.projekt7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003728329511-kd8vtnkn99k6tnuq2bdgtesp3768g6jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHs6x4ABggCDaAZHM42HMLDwmAx24aLV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003728329511-kd8vtnkn99k6tnuq2bdgtesp3768g6jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
