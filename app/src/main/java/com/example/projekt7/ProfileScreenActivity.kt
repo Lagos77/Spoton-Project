@@ -19,10 +19,6 @@ const val EXTRA_MAP_TITLE = "EXTRA_MAP_TITLE"
 private const val REQUEST_CODE = 1234
 
 class ProfileScreenActivity : AppCompatActivity() {
-
-    /*    private lateinit var mapAdapter: MapsAdapter
-    private lateinit var rvMaps: RecyclerView
-*/
     private lateinit var recyclerView: RecyclerView
     private lateinit var mapsList: ArrayList<Place>
     private lateinit var db: FirebaseFirestore
@@ -55,19 +51,6 @@ class ProfileScreenActivity : AppCompatActivity() {
         recyclerView.adapter = profileAdapter
 
         spotsListener()
-
-
-
-/*               mapsAdapter = MapsAdapter(this, object : MapsAdapter.OnClickListener {
-            override fun onItemClick(position: Int) {
-                val intent = Intent(this@ProfileScreenActivity, DisplayMapsActivity::class.java)
-                intent.putExtra(EXTRA_USER_MAP, mapsList[position])
-                startActivity(intent)
-            }
-        })
-*/
-
-
 
         fabCreateMap.setOnClickListener {
             startActivity(Intent(this, CreateMapActivity::class.java))

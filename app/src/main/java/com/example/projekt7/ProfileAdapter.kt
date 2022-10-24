@@ -40,6 +40,8 @@ data class ProfileAdapter(var spotMaps: ArrayList<Place>,val c: Context, val onC
     inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         var titles : TextView = itemView.findViewById(R.id.umTitleLocation)
         var descriptions : TextView = itemView.findViewById(R.id.umDescription)
+        //var deleteButton : ImageButton = itemView.findViewById(R.id.deleteSpot)
+
         //var mMenus : ImageView
        // var itemPosition = 0
 //       val longitude : TextView = itemView.findViewById(R.id.umLongitude)
